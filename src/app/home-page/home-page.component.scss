@@ -1,0 +1,50 @@
+.bg {
+  background: url("./../../assets/GW2cover.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.btn1 {
+  color : rgb(49, 46, 46);
+  background-color: rgba(255, 222, 121, 0.96);
+  border-radius: 10px 0 0 10px;
+  font-size: 16px;
+}
+
+.btn1:not([disabled]):hover {
+  background-color: rgba(107, 103, 91, 0.96);
+  color: white;
+}
+
+.btn1[disabled] {
+  color : rgb(187, 187, 187);
+  background-color: rgba(230, 230, 229, 0.96);
+}
+
+.card-icon {
+  background-image: url('./../../assets/CommanderIcon.jpg');
+  background-size: cover;
+}
+
+.card-custom{
+  background-color: rgb(240, 239, 194);
+}
+
+.parWhite{
+  font-style: italic;
+  color: black;
+}
+
+.text-inside-grid {
+  position: absolute;
+  left: 450px;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
