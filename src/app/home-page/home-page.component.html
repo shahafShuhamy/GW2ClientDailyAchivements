@@ -1,12 +1,13 @@
 <mat-grid-list cols="2" rowHeight="300px">
-
-    <mat-card-title>
+    <mat-card-title [@fadeInAnimation]>
         <p class="parWhite">this site was made by Guild Wars 2 fans in order to support growing community</p>
     </mat-card-title>
 
+
     <mat-grid-tile>
-            <div class="text-inside-grid">
-                <mat-card class="card-custom">
+            <div [@fadeInAnimation] class="text-inside-grid">
+                <mat-card class="card-custom"
+                [@Onselected]="selected ? 'selected' : 'unSelected' ">
                     <mat-card-header>
                         <div mat-card-avatar class="card-icon"></div>
                         <mat-card-title>GW2</mat-card-title>
@@ -16,6 +17,12 @@
                       <button mat-stroked-button>Get My Dailys</button>
                     </mat-card-content>
                   </mat-card>
+                  <br>
+                  <div align="center">
+                    <button mat-raised-button (click)="toggle()">Color Change</button>
+                  </div>
             </div>
     </mat-grid-tile>
 </mat-grid-list>
+
+
