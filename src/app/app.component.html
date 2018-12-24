@@ -13,11 +13,11 @@
           <span>Error page</span>
         </button>
 
-
-        <button mat-menu-item>
-          <mat-icon>notifications_off</mat-icon>
-          <span>Disable alerts</span>
+        <button mat-menu-item [routerLink]="['/achivements']" routerLinkActive="active">
+          <mat-icon>view_list</mat-icon>
+          <span>achivements</span>
         </button>
+
       </mat-menu>
   <router-outlet></router-outlet>
 </div>

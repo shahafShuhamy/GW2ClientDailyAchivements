@@ -13,12 +13,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { AchivementsListComponent } from './achivements-list/achivements-list.component';
+import { AchivementComponent } from './achivements-list/achivement/achivement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ErrorPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    AchivementsListComponent,
+    AchivementComponent
   ],
   imports: [
     BrowserModule,
