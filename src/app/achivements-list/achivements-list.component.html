@@ -1,3 +1,7 @@
-<p>
-  achivements-list works!
-</p>
+<ul>
+  <div>
+    <app-achivement *ngFor='let achivementEl of achivements'
+                    [achivement]="achivementEl">
+    </app-achivement>
+  </div>
+</ul>>

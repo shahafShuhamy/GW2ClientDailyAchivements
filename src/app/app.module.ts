@@ -15,6 +15,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AchivementsListComponent } from './achivements-list/achivements-list.component';
 import { AchivementComponent } from './achivements-list/achivement/achivement.component';
+import { AchivementsService } from './achivements-list/achivements.service';
 
 @NgModule({
   declarations: [
@@ -36,8 +37,8 @@ import { AchivementComponent } from './achivements-list/achivement/achivement.co
     MatIconModule,
     MatMenuModule
   ],
-  exports: [ MatButtonModule, MatCheckboxModule, MatGridListModule ],
-  providers: [],
+  exports: [ MatButtonModule, MatCheckboxModule, MatGridListModule  ],
+  providers: [AchivementsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

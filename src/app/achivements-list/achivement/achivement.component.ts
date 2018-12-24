@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Achivement } from './achivement.model';
 
 @Component({
   selector: 'app-achivement',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./achivement.component.scss']
 })
 export class AchivementComponent implements OnInit {
-
+  @Input() achivement: Achivement;
   constructor() { }
 
   ngOnInit() {
