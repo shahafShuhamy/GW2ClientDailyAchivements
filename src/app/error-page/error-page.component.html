@@ -3,7 +3,9 @@
     <mat-icon class="example-icon">pan_tool</mat-icon>
     <h1>{{ message }}</h1>
   </mat-card-content>
-  <a routerLink='' routerLinkActive="active" class='not-selected-text'>
-      <h2>Back Home</h2>
-    </a>
+  <div *ngIf='devMode'>
+    <a routerLink='' routerLinkActive="active" class='not-selected-text'>
+        <h2>Back Home</h2>
+      </a>
+  </div>
 </mat-card>

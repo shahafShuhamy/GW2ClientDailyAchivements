@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Data } from '@angular/router';
 import { fadeInAnimation } from './../../animations/index';
+import { AppConfig } from '../config';
 
 @Component({
   selector: 'app-error-page',
@@ -9,6 +10,7 @@ import { fadeInAnimation } from './../../animations/index';
   animations: [fadeInAnimation]
 })
 export class ErrorPageComponent implements OnInit {
+  devMode = new AppConfig().getDevMode();
   message: String;
   constructor(private route: ActivatedRoute) { }
 
