@@ -1,4 +1,4 @@
-<mat-card>
+<!-- <mat-card>
   <mat-card-header>
     <div mat-card-avatar class="card-icon"></div>
     <mat-card-title>{{ achivement.gameMode }}</mat-card-title>
@@ -9,5 +9,11 @@
   <mat-card-content>
     requierements : {{ achivement.requierements }}
   </mat-card-content>
-</mat-card>
+</mat-card>   Card Option is not optimal!!-->
+<mat-list-item mat-list-item>
+    <img matListAvatar src="./../../../assets/CommanderIcon.jpg" alt="no image">
+      <h4 mat-line>{{achivement.gameMode}}</h4>
+      <p mat-line> {{achivement.content}} </p>
+      <p mat-line>{{ achivement.requierements }}</p>
+</mat-list-item>
 <hr>

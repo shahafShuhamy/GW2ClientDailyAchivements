@@ -13,7 +13,7 @@ export class AchivementsService {
  constructor() {}
 
  getAchivements() {
-   // this should be a http service call to server bringing dailies achivements.
+   // this should be a http service call to server bringing dailies achivements -> now have a demo.
    return this.achivements;
  }
 }

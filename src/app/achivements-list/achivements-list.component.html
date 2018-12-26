@@ -1,7 +1,8 @@
 <ul>
-  <div [@slideInOut]>
-    <app-achivement *ngFor='let achivementEl of achivements'
-                    [achivement]="achivementEl">
-    </app-achivement>
-  </div>
+  <mat-list [@slideInOut] dense>
+      <h2 mat-subheader>Achivements</h2>
+      <app-achivement *ngFor='let achivementEl of achivements'
+          [achivement] = 'achivementEl'>
+      </app-achivement>
+  </mat-list>
 </ul>>

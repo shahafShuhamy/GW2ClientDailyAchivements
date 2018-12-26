@@ -4,7 +4,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule} from '@angular/material/list';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
@@ -35,9 +36,10 @@ import { AchivementsService } from './achivements-list/achivements.service';
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    MatListModule
   ],
-  exports: [ MatButtonModule, MatCheckboxModule, MatGridListModule  ],
+  exports: [ MatButtonModule, MatCheckboxModule, MatGridListModule, MatListModule ],
   providers: [AchivementsService],
   bootstrap: [AppComponent]
 })
